@@ -1,0 +1,96 @@
+body{
+  width:1000px;
+  background-image: url(http://subtlepatterns.com/patterns/congruent_pentagon.png);
+}
+
+.main,
+.sidebar{
+  float:left;
+  border:1px;
+}
+
+.main{
+  width:50%;
+  margin-left:10%;
+}
+
+.sidebar{
+  width:30%;
+  background-color:rgba(0, 0, 0, 0.4);
+  margin-right:10%;
+  margin-top:120px;
+}
+
+.main h2,
+.sidebar h2{
+  font-size:1.5em;
+}
+
+.main h2{
+  border-bottom:3px double;
+}
+
+.title{
+  font-size:3em;
+  color:#00008b;  
+}
+
+.cpage{
+  border:1px;
+  background-color:rgba(189, 225, 161, 0.6);
+  padding:3px 10px;
+  margin:10px;
+}
+
+.outline>li{
+  padding:3px 10px;
+  margin:10px;
+}
+
+.outline>li:nth-child(even){
+  background-color:rgba(189, 205, 98, 0.6);
+}
+
+.sidebar img{
+  width:100%;
+  margin:1px 2px;
+  padding:1em;
+  box-sizing:border-box;
+}
+
+a:link{
+  text-decoration: none;
+  color: blue;
+}
+
+a:visited{
+  color: purple;
+}
+
+a:hover{
+  text-decoration: underline;
+  color: red;
+}
+
+a:active{
+  color:black;
+}
+
+#application-page h3{
+  font-size:1.5em;
+}
+
+[name^=txt]{
+  background: #dcdcdc; 
+}
+
+input[type=submit]{
+  opacity: 0.3;
+}
+input:checked ~ input[type=submit]{
+  opacity: 1;
+}
+
+input:checked + label{
+  color: #9acd32;
+}

@@ -4,25 +4,26 @@
     <meta charset="utf-8">
     <title>Application form</title>
   </head>
-  <body bgcolor="orange">
+  <body bgcolor="orange" id="application-page">
+    
+  <section class="application-form">
 <h1>Application form</h1>
 <p>
-  <label for="who">
-    <h3>1.Your name</h3>
-  </label>
-  <input type="text" name="name" id="who">
+  
+  <h3>1.Your name</h3>
+  <input type="text" name="txtname">
 </p>
 <p>
   <h3>2.What's your gender?</h3>
 </p>
-  <input type="radio" name="gender" value="d0"> Male<br>
-  <input type="radio" name="gender" value="d1"> Female<br>
+<input type="radio" name="gender" id="gen"> <label for="gen">Male</label><br>
+  <input type="radio" name="gender" id="gen"> <label for="gen">Female</label><br>
 <p>
   <h3>
     3.Birthday
   </h3>
 </p>
-  <input type="date" name="date" id="when">
+  <input type="date" name="txtdate">
 <p>
   <h3>4.Which form of transportation do you use?</h3>
 </p>
@@ -71,40 +72,35 @@
 <p>
   <h3>5.What is the highest level of education that you have completed?</h3>
 </p>
-  <input type="radio" name="education" value="e0"> Less than High School<br>
-  <input type="radio" name="education" value="e1"> High School or equivalent<br>
-  <input type="radio" name="education" value="e2"> Attended College/University<br>
-  <input type="radio" name="education" value="e3"> Associate degree<br>
-  <input type="radio" name="education" value="e4"> Bachelor's degree<br>
-  <input type="radio" name="education" value="e5"> Master's degree<br>
-  <input type="radio" name="education" value="e6"> Professional degree<br>
-  <input type="radio" name="education" value="e7"> Doctorate degree<br>
-  <input type="radio" name="education" value="e8"> I prefer not to answer<br>
+  <input type="radio" name="education" value="e0"> <label for="education">Less than High School</label><br>
+  <input type="radio" name="education" value="e1"> <label for="education">High School or equivalent</label><br>
+  <input type="radio" name="education" value="e2"> <label for="education">Attended College/University</label><br>
+  <input type="radio" name="education" value="e3"> <label for="education">Associate degree</label><br>
+  <input type="radio" name="education" value="e4"> <label for="education">Bachelor's degree</label><br>
+  <input type="radio" name="education" value="e5"> <label for="education">Master's degree</label><br>
+  <input type="radio" name="education" value="e6"> <label for="education">Professional degree</label><br>
+  <input type="radio" name="education" value="e7"> <label for="education">Doctorate degree</label><br>
+  <input type="radio" name="education" value="e8"> <label for="education">I prefer not to answer</label><br>
 <p>
   <h3>
     6.Which industry do you work in or are most involved with?
   </h3>
 </p>
-  <input type="text" name="work" id="what">
+  <input type="text" name="txtwork">
 <p>
   <h3>
     7.Your phone#
   </h3>
 </p>
-  <input type="tel" name="phone" id="num">
+  <input type="tel" name="txtphone">
 <p>
   <h3>
     8.Email address
   </h3>
 </p>
-  <input type="email" name="mail" id="mail">
-<p>
-  <h3>
-    9.Personal website
-  </h3>
-</p>
-  <input type="url" name="website" id="web">
+  <input type="email" name="txtmail">
  <br><br>
   <input type="submit" value="Submit">
+  </section>
   </body>
 </html>
